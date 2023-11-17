@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="overlay"></div>
+        <nav>
+          <h1>beverline</h1>
+    
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="childwood.html">childwood</a></li>
+                <li><a href="education.html">Education</a></li>
+                <li><a href="skills&talent.html">Skills & Talents</a></li>
+                <li><a href="futureaspirations.html">Future Aspiration</a></li>
+                <li><a href="contact.html">Contact information</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="childwood">
+        <h1>I as a child memories</h1>
+
+        <select id="memories">
+            <option value="1">Nusery school Memory</option>
+        <option value="2">My childhood best friend</option>
+        <option value="3"> Best family Moment</option>
+        <option value="4">Figuring my talent</option>
+        <option value="5">Best Moment</option>
+        </select>
+        <button onclick="displayMemory()">Recall Memory</button>
+        <p id="memory-text"></p>
+    
+        <script>
+            function displayMemory() {
+                const memoryText = document.getElementById("memory-text");
+                const memorySelect = document.getElementById("memories");
+                const selectedMemory = memorySelect.options[memorySelect.selectedIndex].value;
+    
+                switch (selectedMemory) {
+                    case "1":
+                memoryText.textContent="I was happy attending a school where my lovely Mum was my own teacher. It was not tough for since i was able to be around my mum each and every other moment. ";
+                break;
+            case "2":
+                memoryText.textContent="I had a friend by the name Marion back in my childhood . She happend to be a very good friend and my schoolmate too. We were best of friends till to date."
+                break;
+            case "3":
+                memoryText.textContent="Spending time with my family was the best thing ever. ";
+                break;
+            case "4":
+                 memoryText.textContent="My talent for dancing i come in venture when i was in class six.i was very confident of dancing. i love dancing I do participate in TikTok shoots with my friends.";
+                 break;
+            case "5":
+                 memoryText.textContent="My best moment was when i got to pass with flying colors in my school. "
+                }
+            }
+        </script>
+
+    </section>
+    <footer class="section-p1">
+        <div class="col" class="Follow">
+                <h4>Contact</h4>
+                <p><b>Name:</b>Beverline Omondi</p>
+                <p><b>phoneNo:</b> 0707605631</p>
+                <p><b>Email:</b>beverlineomondi827@gmail.com</p>
+                <br>
+                  <H4>Follow Me</H4>
+                  
+                   <p> <i class="fab fa-facebook-f"><a href="#">beverlineomondi</a></i></p>
+                    <p><i class="fab fa-twitter"><a href="#">beverlineomondi</a></i></p>
+                    <p><i class="fab fa-youtube"><a href="#">beverlineomondi</a></i></p>
+                  </div>
+                <p>&copy; 2023 Beverline Omondi</p>
+        
+        
+            </footer>
+</body>
+</html>

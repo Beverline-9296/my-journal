@@ -1,0 +1,204 @@
+*{
+    margin: 0;;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto',sans-serif;
+}
+h1{
+    font-size: 50px;
+    line-height: 64px;
+    color:#222;
+}
+h2{
+    font-size: 46px;
+    line-height: 54px;
+    color:blue ;
+}
+h4{
+    font-size: 20px;
+    color: #222;
+}
+h6{
+    font-weight: 700;
+    font-size: 12px;
+}
+p{
+    font-size: 16px;
+    color: orangered;
+    margin: 15px 0 20px 0;
+}
+.section-p1{
+    padding: 40px 80px;
+}
+.section-m1{
+    padding: 40px 0px;
+}
+button.normal{
+    font-size: 14px;
+    font-weight:600;
+    padding: 12px 20px;
+    color: #000;
+    background-color: aliceblue;
+    border-radius:4px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    transition: 0.2s;
+}
+button.white{
+    font-size: 13px;
+    font-weight: 600;
+    padding: 11px 18px;
+    color: black;
+    background-color:transparent;
+    cursor: pointer;
+    border: 1px solid plum;
+    outline: none;
+    transition: 0.2s;
+}
+body{
+    width: 100%;
+    background-color: aquamarine;
+}
+header{
+    display: flex;
+    padding: 20px 80px;
+    justify-content: space-between;
+    background-color: gray;
+    background-repeat: no-repeat;
+    z-index: 999;
+    position: sticky;
+    background-size: cover;
+    height: 150px;
+    position: relative;
+    top: 0;
+    left: 0;
+}
+.overlay{
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    height: 100%;
+    right: 0;
+    bottom: 0;
+    padding: 0 !important;
+    margin: o !important;
+    background-color: rgba(10,10, 10,0.3);
+}
+nav{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 50px 60px 0 60px;
+}
+nav h1{
+    color: yellow;
+}
+nav li {
+    list-style: none;
+    display: inline-block;
+    padding: 0 20px;
+    position: relative;
+}
+nav li span{
+    padding-left: 5px;
+
+}
+li a{
+    padding: 5px;
+    background-color: white;
+    text-decoration: none;
+}
+
+nav li a:hover,
+nav li a.active,
+nav li span.active{
+    color: blue;
+}
+nav li a.active::after,
+nav li a:hover::after{
+    content: "";
+    width: 30%;
+    height: 2px;
+    background: #088178;
+    position: absolute;
+    bottom: -4px;
+    left: 20px;
+}
+.homepage{
+    text-align: center;
+    padding: 50px;
+}
+.homepage img{
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+}
+section{
+    padding: 0 10% ;
+}
+.academic .extracurricular{
+    margin: 0 30px;
+    width: 500px;
+  }
+  
+  .academic .extracurricular p {
+    line-height: 1.5em;
+  }
+ #academic .academic .academic li{
+    color: yellow;
+    padding: 2px 30%;
+}
+.academic .extracurricular .academic h1{
+    color: coral;
+}
+footer{
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1em;
+    bottom: 0;
+    height: 10%;
+    width: 100%;
+}
+footer .col{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+footer .col .follow i{
+    color: skyblue;
+    padding-right: 4px;
+    cursor: pointer;
+}
+footer h4{
+    color: crimson;
+    font-size: 14px;
+    padding-bottom: 20px;
+}
+footer p{
+    font-size: 13px;
+    margin: 0 0 8px 0;
+}
+footer a {
+    font-size: 13px;
+    padding: 0 10%;
+    text-decoration: none;
+    color: goldenrod;
+    margin-bottom:10px ;
+}
+footer .follow{
+    margin-top: 20px;
+    display: flex;
+}
+footer .follow i{
+    color: skyblue;
+    padding-right: 4px;
+    cursor: pointer;
+}
